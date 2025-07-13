@@ -1,12 +1,11 @@
-dotenv.config();
-require("./config/passport.js");
-
 const express = require("express");
 const passport = require("passport");
 const session = require("express-session");
 const dotenv = require("dotenv");
 const path = require("path");
 
+dotenv.config();
+require("./config/passport.js");
 
 const app = express();
 
