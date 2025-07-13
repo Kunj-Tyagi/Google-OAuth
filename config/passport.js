@@ -6,7 +6,7 @@ require("dotenv").config();
 passport.use(new GoogleStrategy({
     clientID: process.env.clientID,
     clientSecret: process.env.clientsecret,
-    callbackURL: "http://localhost:3000/auth/google/callback"
+    callbackURL: "https://google-oauth-ug1m.onrender.com/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // You can save the user to the DB here
